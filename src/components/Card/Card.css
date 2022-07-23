@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem 2rem 1rem;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+}
+
+.card-carousel {
+    margin: 1rem;
+    width: 60%;
+}
+
+.card-content > h3, h4 {
+    margin: 1rem;
+}
+
+.card-content > p {
+    margin: 1rem;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+@media only screen and (max-width: 1078px){
+    .card {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .card-carousel {
+        width: 100%;
+    }
+
+    .card-content > h3, h4 {
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 769px){
+
+    .card-carousel {
+        margin: 0.5rem;
+    }
+}
