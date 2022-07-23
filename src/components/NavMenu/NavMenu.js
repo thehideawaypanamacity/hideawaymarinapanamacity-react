@@ -31,8 +31,6 @@ export default function NavMenue(props) {
             return "horizontal-show";
         } else if(!isShown && !isVertical) {
             return "horizontal-show";
-        } else {
-            return "";
         };
     }
 

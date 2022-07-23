@@ -14,10 +14,14 @@ export default function Card(props) {
   }
 
   function getImage(image, key) {
+    if(!image) {
+      return null;
+    }
+
     return (
       <div key={key}>
         <img
-          style={image.style ?? {}}
+          style={image.style || {}}
           className={getPropsClassNames(image.className)}
           src={image.src}
           alt={image.alt}>
@@ -38,7 +42,7 @@ export default function Card(props) {
   }
 
   return (
-    <div style={props.style} className={"card elevation-4 " + getPropsClassNames(props.className)}>
+    <div style={props.style || {}} className={"card elevation-4 " + getPropsClassNames(props.className)}>
       {
         props.carousel && props.images
           ? getCarousel(props.images)
