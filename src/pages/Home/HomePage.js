@@ -36,7 +36,7 @@ export const HomePage = () => {
           image={card.image}
           subtitle={card.subtitle}
         >
-            <h4>For price and rent text 850-890-4808</h4>
+            <h4>For price and rent text 850-896-3183</h4>
         </Card>
       </Section>
     </div>
